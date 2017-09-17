@@ -30,6 +30,16 @@ public:
     return y_;
   }
 
+  bool operator==(const point2d& other) const
+  {
+    return get_x() == other.get_x() && get_y() == other.get_y();
+  }
+
+  bool operator!=(const point2d& other) const
+  {
+    return !(*this == other);
+  }
+
   point2d& operator+=(const point2d& other)
   {
     x_ += other.x_;

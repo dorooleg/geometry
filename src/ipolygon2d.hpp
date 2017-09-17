@@ -22,7 +22,7 @@ public:
   {
     return points_.empty();
   }
-  
+
   size_t size() const
   {
     return points_.size();
